@@ -1,0 +1,17 @@
+-Why useReducer?
++Star managemetn wit useState is not enough in certain situations:
+* When components have alot  of state varianbles and state updates, spread across man event handlers all over component.
+=>Store realeted stat in state object
+=>reducer: pure function that takes current state and acton, return netx state
+=>action:object that describe how to update state
+=>dispatch: object contain imformation that how to update state
+* When multiple state updates happen at the same time( as a reaction to the same event, liek "starting a game")
+* When updating one piece of stae depend on none or multiple other pieces of state
+
+
+=> reducer is :
+-> what do you want me to do: dispatch will tell you
+-> I do that so what happen,anything updates: state
+all the things are like, what do you want, tell me, and i have will update what i have
+
+=>Cơ bản là state là giá trị có thể thay đổi, và khi nó bị thay đổi sẽ re render lại toàn bộ những component chứa nó, khác biệt của reducer là nó có thể chứa nhiều state
